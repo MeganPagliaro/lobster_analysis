@@ -1,0 +1,15 @@
+---
+title: lobster analysis
+Authors: Megan and Michelle
+---
+# Setup
+```{r}
+library(readr)
+library(dplyr)
+library(ggplot2)
+library(tidyr)
+library(janitor)
+
+lobster_abundance <- readr::read_csv(here::here("data", "Lobster_Abundance_All_Years_20240411.csv")) %>%
+    janitor::clean_names()
+```
